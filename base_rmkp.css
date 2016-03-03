@@ -1,0 +1,195 @@
+/* base styles (mobile) */
+
+body{	
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+	background-color:#fafafa;
+	color: #222;
+	font-size:120%;
+	line-height: 1.35;
+}	
+
+p{
+	margin:0px;
+	padding:0px;
+	margin-bottom:1em;
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.content {
+	margin: 0 auto;
+	width:90%;
+}
+
+img{
+	width:100%;
+	margin: 0;
+	padding: 0;
+
+}
+
+a img:hover{
+	
+	background-color:#46e;
+	-moz-box-shadow:    inset 0 10px 40px 40px #fafafa;
+   -webkit-box-shadow: inset 0 10px 40px 40px #fafafa;
+   box-shadow:         inset 0 10px 40px 40px #fafafa;
+}
+
+table.multi td{
+	vertical-align:top;
+
+}
+
+table.multi td.pic{
+	vertical-align:top;
+	width:50%;
+}
+
+table.multi p{
+	font-size: 110%;
+	line-height: 1.35;
+}
+
+table.grid{
+
+	margin-top:20px;
+	margin-bottom:25px;
+	border-collapse:collapse; 
+
+}
+
+table.grid tr td{
+	border-collapse:collapse; 
+	margin:0px;
+	padding:4px;
+	-webkit-transition: background-color 100ms linear;
+    -moz-transition: background-color 100ms linear;
+    -o-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+    transition: background-color 100ms linear;
+}
+
+table.grid tr td:hover{
+	border-collapse:collapse; 
+	background-color:#46e;
+	margin:0px;
+	padding:4px;
+}
+
+@font-face {
+    font-family: 'Lato';
+    /*note, you are also supposed to include the ttf
+    of this font in the folder for compatibility in old browsers */
+    src: url('Lato-Hairline.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+h1{
+	font-family: 'Lato', sans-serif;
+	font-weight:100;
+	font-size:80px;
+	line-height:80px;
+	color:#222;
+	margin-top:5px;
+	margin-bottom:20px;
+	position:relative;
+	left:-9px;
+}
+
+h1 span{
+	color:#999;
+}
+
+h2, h3, h4{
+	font-family: 'Futura', sans-serif;
+	color: #444;
+	margin-top:30px;
+}
+
+h2{
+	font-size:30px;
+	line-height:30px;
+	margin-bottom:20px;
+}
+
+h3{
+	font-size:24px;
+	line-height:24px;
+	text-align:center;
+	margin-bottom:5px;
+}
+
+h4{
+	font-size:20px;
+	line-height:20px;
+	text-align:left;
+	margin-bottom:17px;
+	margin-top:15px;
+}
+
+#links{
+	padding-bottom:20px;
+}
+
+ul {
+	margin:0;
+	padding:0;
+}
+
+ul li {
+	list-style-type: none;
+	display: inline;
+	margin:0;
+	padding:0;
+	padding-right:20px;
+}
+
+ul span {
+    padding-right:20px;
+}
+
+a {
+	text-decoration:none;
+	color:#444;
+	height:60px;
+}
+
+a:hover{
+	color:#46e;
+}
+
+.arrow {
+	font-family: 'Lato', sans-serif;
+	font-size:100px;
+	text-decoration:none;
+	display:inline-block;
+	 line-height: 60px;
+}
+
+hr{ 
+	border: solid #ddd;
+	border-width: 1px 0 0;
+	clear: both;
+	margin: 10px 0 10px;
+	height: 0;
+}
+
+#copyright{
+	font-size:50%;
+}
+
+/* responsive adjustments */
+@media only screen and (min-width: 900px) {
+
+	.content { 
+		margin: 0 auto;
+		width: 800px; 
+	}
+
+}
