@@ -32,9 +32,31 @@ img{
 
 }
 
+img.screenshot{
+    
+    border: solid 12px #000;
+    border-radius: 20px;
+    border-top-width: 25px;
+    border-bottom-width: 25px;
+    
+    width: 200px;
+    height: auto;
+}
+
 table.multi td{
 	vertical-align:top;
 
+}
+
+table.multi td.type2{
+    padding-left:10px;
+}
+
+table.multi td.small{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 1%;
+    
 }
 
 table.multi td.pic{
