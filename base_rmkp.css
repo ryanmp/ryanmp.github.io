@@ -140,6 +140,13 @@ h4{
 	margin-top:15px;
 }
 
+.link{
+    min-width: 135px;
+    max-width: 200px;
+    height: auto;
+
+}
+
 #links{
 	padding-bottom:20px;
 }
