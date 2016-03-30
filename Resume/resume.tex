@@ -1,0 +1,136 @@
+\documentclass[11pt,a4paper,sans]{moderncv}  
+
+\moderncvstyle{casual}                    
+\moderncvcolor{blue}  
+
+\usepackage[scale=0.75]{geometry}
+
+\name{Ryan}{Phillips}
+\title{Software Engineer, Computer Scientist, Web \& Mobile Developer}
+\phone[mobile]{+1~(541)~740~6797}
+\email{rmkpzx@gmail.com}
+\homepage{www.rmkp.me} 
+
+% usage: \cvreference{name}{address line 1}{address line 2}{address line 3}{address line 4}{e-mail address}{phone number}
+% Everything but the name is optional
+% If \addresssymbol, \emailsymbol or \phonesymbol are specified, they will be used.
+% (Per default, \addresssymbol isn't specified, the other two are specified.)
+% If you don't like the symbols, remove them from the following code, including the tilde ~ (space).
+
+\newcommand{\cvreference}[7]{%
+	    \textbf{#1}\newline% Name
+	    \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+	    \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+	    \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+	    \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+	    \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+	    \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+
+\newcommand{\cvsinglecolumn}[1]{%
+  \cvline{}{%
+    \begin{minipage}[t]{\listdoubleitemmaincolumnwidth}#1\end{minipage}%
+    }%
+}
+
+
+\begin{document}
+
+\maketitle
+
+\section{Education}
+\cventry{2010--2014}{Bachelors of Computer Science}{Oregon State University}{Corvallis, OR}{\textit{3.3/4.0}}{}
+\cventry{2004--2006}{Associate of the Arts}{Linn Benton Community College}{Albany, OR}{\textit{3.65/4.0}}{}
+
+\section{Technical Experience}
+\subsection{Have Worked Extensively With}
+\cvline{languages}{SQL, C\#, Python, Javascript, HTML, CSS, Java, C, C++, \LaTeX{}, Mathematica, Matlab}
+\cvline{technologies}{SQL Server, Visual Studio, Sublime, Unity3D, jQuery, Windows, Linux, OS X, C4D, Microsoft Office, Libre Office}
+\subsection{Have Experience With}
+\cvline{languages}{Assembly, SASS, PHP, Haskell, Prolog, AS3, BASIC}
+\cvline{technologies}{Git, Django, MySQL, AJAX, Flash, Eclipse, Bootstrap, Photoshop, Bash Scripting}
+
+\section{Relevant Coursework}
+\subsection{Oregon State University, Corvallis, OR}
+\cvline{computer science}{ Intro to C Programming, Intro to Computer Science I \& II (Java), Data Structures, Computer Organization and Assembly Language Programming, Databases, Operating Systems I \& II, Software Engineering I \& II, Computer Networks, Programming Language Fundamentals (Haskell), Artificial Intelligence, Algorithm Analysis, Computer Architecture, Translators/Compilers, Theory of Computation}
+\cvline{physics}{ Modern Physics, Symmetries \& Idealizations, Simple Harmonic Oscillations, Periodic Systems, Static Vector Fields, 1D Waves, Quantum Measurements and Spin, Scientific Computing (Python), Analog and Digital Electronics}
+\cvline{engineering}{Statics, Electrical Fundamentals I - III, Digital Logic Design, Statistics}
+\cvline{mathematics}{Differential Calculus, Integral Calculus, Vector Calculus, Applied Differential Equations, Vector Calculus I \& II, Linear Algebra, Infinite Sequences and Series, Discrete Mathematics I \& II,  Numerical Analysis}
+
+\section{Experience}
+\subsection{Relevant}
+
+\cventry{2015}{Developer and Research Assistant}{DemandLink}{Salem, OR}{}{
+Continued previous responsibilities along with taking lead solo development on major new products. Collaborated with lead researcher on AI technology designs \& implementations (genetic programs and artificial neural networks).
+}
+
+\cventry{2014}{Software Engineer Intern}{DemandLink}{Salem, OR}{}{
+Maintained legacy SQL DBs/codebases and .NET sites for business analytics/intelligence SaaS (with an emphasis on forecasting \& replenishment). Implemented and tested new features for existing software. Designed \& coded prototypes for both in-house and client-facing products. And since we were a fairly small team, I had many more related-responsibilities, too many to list here.
+}
+
+\cventry{2012--2014}{ECampus Student Worker}{Oregon State University}{Corvallis, OR}{}{
+Created digital content and tools for online chemistry courses - including animations, videos, flash, and basic software.
+}
+\subsection{Miscellaneous}
+\cventry{2008--2012}{Box Mover and Yard Truck Driver}{Lowes RDC 1436}{Lebanon, OR}{}{
+Moved many, many boxes and drove and parked trailers full of many, many boxes. 
+}
+\cventry{2006--2008}{Professional Musician and Merchandise Manager}{The Send}{Nashville, TN}{}{
+Played keyboards for touring band and managed merchandise.
+}
+\cventry{2005--2006}{Miscellaneous Work Study}{LBCC}{Albany, OR}{}{
+Worked as a librarian and a janitor.
+}
+\cventry{2003--2005}{Customer Service}{McDonalds}{Sweet Home, OR}{}{
+Helped customers, made food, cleaned, and did cash administration. 
+}
+
+\section{Interests \& Hobbies}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Music composition}{Playing piano \& drums}
+\cvlistdoubleitem{Photography}{Hiking \& Biking}
+\cvlistdoubleitem{Road trips}{Making \& playing videogames}
+
+\section{References}
+
+\cvsinglecolumn{
+\cvreference{Dr. Robin Cross}
+    {Research Director}
+    {DemandLink}
+    {}
+    {}
+    {rcross@demandlink.com}
+    {503-510-0506}
+  }
+
+\vspace{.75em}
+
+\cvsinglecolumn{
+    \cvreference{John Garren}
+    {CEO}
+    {DemandLink}
+    {}
+    {}
+    {johng@demandlink.com}
+    {}
+}
+
+\vspace{.75em}
+
+\cvsinglecolumn{
+\cvreference{Dr. Marita Barth}
+    {Chemistry Professor}
+    {Oregon State University}
+    {}
+    {}
+    {marita.barth@science.oregonstate.edu}
+    {541-737-4194}
+  }
+
+   
+    
+
+
+\end{document}
